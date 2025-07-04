@@ -1,69 +1,35 @@
-# Green Consultant - SDG Module Analyzer
+# SDG Module Analyzer
 
-A Python script designed to analyze university module webpages and identify connections with the United Nations Sustainable Development Goals (SDGs) by searching for relevant keywords in the module content.
+A Python tool that analyzes university course modules for Sustainable Development Goal (SDG) relevance by scanning webpage content for SDG-related keywords.
 
----
+![SDG Logo](https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/SDG_Logo_Rev_COL_Transparent_WEB.png)
 
 ## Features
 
-- ✅ Scrapes module URLs from university course pages  
-- ✅ Extracts and cleans visible text from each module page  
-- ✅ Analyzes content against 17 SDG keyword lists  
-- ✅ Generates a comprehensive CSV report summarizing SDG keyword matches  
-- ✅ Runs Chrome in headless mode for efficient and silent processing  
-
----
-
-## Requirements
-
-- Python 3.7 or higher  
-- Google Chrome browser installed  
-- [Selenium](https://selenium-python.readthedocs.io/) Python package  
-- ChromeDriver (compatible with your installed Chrome version)  
-
----
+- 🕸️ Web scraping of module pages
+- 🔍 Keyword analysis against all 17 SDGs
+- 📊 CSV report generation
+- 🚀 Headless browser operation
+- ⚙️ Customizable keyword lists
 
 ## Installation
 
-1. Install Selenium via pip:
+### Prerequisites
 
-   ```bash
-   pip install selenium
+- Python 3.7+
+- Chrome browser
+- ChromeDriver (matching your Chrome version)
+
+### Setup
+
+```bash
+# Install required package
+pip install selenium
+
+# Download ChromeDriver (match your Chrome version)
+# https://chromedriver.chromium.org/downloads
 
 
-Usage
-Configure the script variables:
 
-filepath — Path where the results CSV will be saved.
 
-url — The target university course modules page URL to scrape.
 
-Run the script:
-
-The script will:
-
-Scrape all module URLs from the given course page
-
-Extract visible text content from each module page
-
-Search the content for keywords linked to the 17 SDGs
-
-Output a CSV file listing each module, URL, and the matched SDG keywords
-
-Example Output Format
-Module Code	URL	Matched SDG Keywords
-CLA1001	https://.../CLA1001	SDG 4: pedagogy; SDG 5: gender identity
-
-Default Target URL
-The script is pre-configured to analyze modules from the University of Exeter's Classics program:
-
-ruby
-Copy
-Edit
-https://www.exeter.ac.uk/study/studyinformation/modules/?prog=classics&year=2025/6
-Notes
-Chrome runs in headless mode by default for better performance and less resource usage.
-
-You may need to adjust time.sleep() durations within the script depending on your network speed to ensure all content loads properly.
-
-The SDG keyword lists are customizable within the sdg_keywords dictionary in the script to better fit your analysis needs.
