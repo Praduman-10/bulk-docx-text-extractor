@@ -44,7 +44,7 @@ sdg_keywords = {
 
 
 
-### Setup
+## Setup
 
 ```bash
 # Install required package
