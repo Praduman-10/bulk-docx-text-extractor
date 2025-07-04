@@ -19,6 +19,13 @@ url = "https://www.exeter.ac.uk/study/studyinformation/modules/?prog=classics&ye
 filepath = "results.csv"  # Output CSV file path
 ```
 
+2. Run the analyzer:
+```Python
+python sdg_analyzer.py
+```
+
+
+
 ## Customization
 
 Customize SDG keywords as needed:
@@ -32,6 +39,9 @@ sdg_keywords = {
     "SDG 5": ["gender equality", "feminism"],
     # ... continue for all 17 SDGs ...
 }
+
+```
+
 
 
 ### Setup
