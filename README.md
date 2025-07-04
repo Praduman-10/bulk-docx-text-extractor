@@ -17,7 +17,7 @@ A Python tool that analyzes university course modules for Sustainable Developmen
 ```python
 url = "https://www.exeter.ac.uk/study/studyinformation/modules/?prog=classics&year=2025/6"
 filepath = "results.csv"  # Output CSV file path
-
+```
 
 ## Customization
 
