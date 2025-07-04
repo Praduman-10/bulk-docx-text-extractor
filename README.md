@@ -2,23 +2,37 @@
 
 A Python tool that analyzes university course modules for Sustainable Development Goal (SDG) relevance by scanning webpage content for SDG-related keywords.
 
-![SDG Logo](https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/07/SDG_Logo_Rev_COL_Transparent_WEB.png)
-
 ## Features
 
-- 🕸️ Web scraping of module pages
-- 🔍 Keyword analysis against all 17 SDGs
-- 📊 CSV report generation
-- 🚀 Headless browser operation
-- ⚙️ Customizable keyword lists
+- 🕸️ Web scraping of module pages  
+- 🔍 Keyword analysis against all 17 SDGs  
+- 📊 CSV report generation  
+- 🚀 Headless browser operation  
+- ⚙️ Customizable keyword lists  
 
-## Installation
+## Usage
 
-### Prerequisites
+1. Configure the target URL and output file path in the script:
 
-- Python 3.7+
-- Chrome browser
-- ChromeDriver (matching your Chrome version)
+```python
+url = "https://www.exeter.ac.uk/study/studyinformation/modules/?prog=classics&year=2025/6"
+filepath = "results.csv"  # Output CSV file path
+
+
+## Customization
+
+Customize SDG keywords as needed:
+
+```python
+sdg_keywords = {
+    "SDG 1": ["poverty", "economic justice", "welfare"],
+    "SDG 2": ["food justice", "sustainable agriculture"],
+    "SDG 3": ["public health", "wellbeing"],
+    "SDG 4": ["education", "inclusive learning"],
+    "SDG 5": ["gender equality", "feminism"],
+    # ... continue for all 17 SDGs ...
+}
+
 
 ### Setup
 
@@ -28,8 +42,4 @@ pip install selenium
 
 # Download ChromeDriver (match your Chrome version)
 # https://chromedriver.chromium.org/downloads
-
-
-
-
 
