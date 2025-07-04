@@ -1,20 +1,21 @@
-# Green Consultant - DOCX Extractor
+# Green Consultant - DOCX to TXT Extractor
 
-A simple Python utility to batch-extract text from .docx files and save them as .txt files.
+This project is a simple Jupyter notebook that batch-converts Microsoft Word `.docx` files into plain `.txt` files. It is designed to help with text extraction for the Green Consultant project.
 
 ## Features
 
-✅ Extracts all paragraphs from .docx files  
-✅ Batch processes entire folders  
-✅ Saves clean .txt files in a chosen output folder  
-✅ Simple CLI interface
+✅ Reads all `.docx` files in a specified folder  
+✅ Extracts text paragraph by paragraph  
+✅ Saves the extracted text as `.txt` files in the same folder
+
+---
 
 ## Requirements
 
 - Python 3.7+
 - [python-docx](https://pypi.org/project/python-docx/)
 
-Install requirements:
+You can install the required package using:
 
 ```bash
-pip install -r requirements.txt
+pip install python-docx
